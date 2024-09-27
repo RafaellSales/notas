@@ -6,4 +6,15 @@ import { defineConfig } from "vite";
 export default defineConfig({
   base: "./src",
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: "/index.html",
+    },
+  },
+  server: {
+    mimeTypes: {
+      "application/javascript": ["js"],
+      "text/javascript": ["js"],
+    },
+  },
 });
