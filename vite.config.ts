@@ -11,10 +11,4 @@ export default defineConfig({
       input: "/index.html",
     },
   },
-  server: {
-    mimeTypes: {
-      "application/javascript": ["js"],
-      "text/javascript": ["js"],
-    },
-  },
 });
